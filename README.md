@@ -88,7 +88,7 @@ This repository contains the codebase for our company's comprehensive web platfo
 
 ### Search Functionality
 
-- Implement Elasticsearch or similar search engine for advanced querying
+- Implement search for advanced querying
 - Design and implement multi-criteria filtering logic
 
 ### Database Design
