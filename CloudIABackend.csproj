@@ -1,0 +1,83 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <UserSecretsId>dc043044-a5e4-4688-af27-279ac416962f</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Models\JobOfferClasses\**" />
+    <Content Remove="Models\JobOfferClasses\**" />
+    <EmbeddedResource Remove="Models\JobOfferClasses\**" />
+    <None Remove="Models\JobOfferClasses\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\Authenticated\AUTH_Job_City.cs" />
+    <Compile Remove="Controllers\Authenticated\AUTH_Job_Description.cs" />
+    <Compile Remove="Controllers\Authenticated\AUTH_Job_FurtherInformation.cs" />
+    <Compile Remove="Controllers\Authenticated\AUTH_Job_JobClosed.cs" />
+    <Compile Remove="Controllers\Authenticated\AUTH_Job_JobTitle.cs" />
+    <Compile Remove="Controllers\Authenticated\AUTH_Job_JobType.cs" />
+    <Compile Remove="Controllers\Authenticated\AUTH_Job_Language.cs" />
+    <Compile Remove="Controllers\Authenticated\AUTH_Job_PrimarySkill.cs" />
+    <Compile Remove="Controllers\Authenticated\AUTH_Job_Published.cs" />
+    <Compile Remove="Controllers\Authenticated\AUTH_Job_Salary.cs" />
+    <Compile Remove="Controllers\Authenticated\AUTH_Job_StartDate.cs" />
+    <Compile Remove="Controllers\Authenticated\AUTH_Job_State.cs" />
+    <Compile Remove="Controllers\Authenticated\AUTH_Job_Tasks.cs" />
+    <Compile Remove="Controllers\Authenticated\AUTH_Job_Url.cs" />
+    <Compile Remove="Controllers\Authenticated\AUTH_Job_YouCanExpect.cs" />
+    <Compile Remove="Controllers\Authenticated\AUTH_Job_YourProfile.cs" />
+    <Compile Remove="Controllers\Authenticated\AUTH_VisitorsController.cs" />
+    <Compile Remove="Controllers\Authenticated\JobOfferSecondarySkill.cs" />
+    <Compile Remove="Controllers\Public\p_CountContoller.cs" />
+    <Compile Remove="Controllers\WeatherForecastController.cs" />
+    <Compile Remove="DTO\TechStackDTO.cs" />
+    <Compile Remove="Migrations\20210817082237_initialMigration.cs" />
+    <Compile Remove="Migrations\20210817082237_initialMigration.Designer.cs" />
+    <Compile Remove="Migrations\20210820064316_sourceAndSourceId.cs" />
+    <Compile Remove="Migrations\20210820064316_sourceAndSourceId.Designer.cs" />
+    <Compile Remove="Migrations\20210823105804_Added_JobOfferSourceUrl.cs" />
+    <Compile Remove="Migrations\20210823105804_Added_JobOfferSourceUrl.Designer.cs" />
+    <Compile Remove="Migrations\20211102114516_TechStack_Tasks_Added.cs" />
+    <Compile Remove="Migrations\20211102114516_TechStack_Tasks_Added.Designer.cs" />
+    <Compile Remove="Migrations\20220823161930_userExpanded.cs" />
+    <Compile Remove="Migrations\20220823161930_userExpanded.Designer.cs" />
+    <Compile Remove="Migrations\20220823163726_initialMigration.cs" />
+    <Compile Remove="Migrations\20220823163726_initialMigration.Designer.cs" />
+    <Compile Remove="Migrations\20220831161820_mig1.cs" />
+    <Compile Remove="Migrations\20220831161820_mig1.Designer.cs" />
+    <Compile Remove="Migrations\20220904165949_mig1.cs" />
+    <Compile Remove="Migrations\20220904165949_mig1.Designer.cs" />
+    <Compile Remove="Migrations\20220907094634_mig2.cs" />
+    <Compile Remove="Migrations\20220907094634_mig2.Designer.cs" />
+    <Compile Remove="Migrations\CloudIABackendContextModelSnapshot.cs" />
+    <Compile Remove="Migrations\NetRunnersBackendContextModelSnapshot.cs" />
+    <Compile Remove="Models\ENUM_JobTechStack_old.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.3" NoWarn="NU1605" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="6.0.3" NoWarn="NU1605" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="6.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Extensions\" />
+    <Folder Include="Migrations\" />
+  </ItemGroup>
+
+</Project>
